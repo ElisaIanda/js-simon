@@ -31,7 +31,6 @@ console.log(time);
 
 // divido il tempo ottenuto per 1000 t sec per 60 t min e 60 t ore
 console.log(time / 1000 / 60 / 60);
-// countdownTimer.innerHTML = (time / 1000 / 60 / 60);
 
 // Mi ritorna il numero specifico di ore minuti e secondi
 
@@ -58,9 +57,6 @@ continuedHours();
 
 function continuedHours(){
 
-    countdownTimer.innerHTML = ""; 
-
-    now = new Date ();
 
     countdownTimer.innerHTML = ("ore: " + hours + " "+ "minuti: " + minutes + " "+ "secondi: " + seconds);
 
