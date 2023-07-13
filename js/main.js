@@ -34,8 +34,8 @@ function contiuedHourscicle() {
     // console.log(time);
 
     const date1 = now;
-    const date2 = new Date('July 13, 2023 19:27:50');
-    // const date2 = new Date('July 14, 2023 09:30:00');
+    // const date2 = new Date('July 13, 2023 19:27:50');
+    const date2 = new Date('July 14, 2023 09:30:00');
 
     // Ottengo valore in millisecondo
     let time = date2.getTime() - date1.getTime();
