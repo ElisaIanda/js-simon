@@ -33,8 +33,8 @@ function continuedHours() {
     // console.log(time);
 
     const date1 = now;
-    const date2 = new Date('July 13, 2023 17:07:00');
-    // const date2 = new Date('July 14, 2023 09:30:00');
+    // const date2 = new Date('July 13, 2023 17:07:00');
+    const date2 = new Date('July 14, 2023 09:30:00');
 
     // Ottengo valore in millisecondo
     let time = date2.getTime() - date1.getTime();
@@ -63,9 +63,9 @@ function continuedHours() {
     // Impostare un messaggio alla fine del countdown
     if (time <= 0) {
         finalMessage.innerHTML = ("Il tempo di attesa è finito");
-    }else if (time = 0){
-        // Non riesco a fermare il tempo quando arriva alla fine
-    }
+    }else if // Non riesco a fermare il tempo quando arriva alla fine
+    
+    
 
 }
 
