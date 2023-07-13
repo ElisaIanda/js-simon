@@ -8,8 +8,9 @@ let now;
 // Dichiaro la funzione
 // Uso setInterval che crea un ciclo ripetuto dopo 1 secondo
 // Metto dentro la funzione setInterval il nome della mia funzione dove creo il calcolo del tempo rimanente
-setInterval(continuedHours, 100)
-continuedHours();
+
+setInterval(contiuedHourscicle, 100);
+contiuedHourscicle();
 
 // Ho spostato il calcolo del tempo dentro la funzione.
 // Questa funzione parte dalla data attuale a domani, 
@@ -19,7 +20,7 @@ continuedHours();
 // /1000 /60 in millesecondi e secondi per avere il minuto
 // /1000 /60 / 60 in millesecondi e secondi e ora per avere l'ora
 
-function continuedHours() {
+function contiuedHourscicle() {
 
     // Dichiaro le mie variabili
     const countdownTimer = document.getElementById("countdown-timer");
@@ -33,8 +34,8 @@ function continuedHours() {
     // console.log(time);
 
     const date1 = now;
-    // const date2 = new Date('July 13, 2023 17:07:00');
-    const date2 = new Date('July 14, 2023 09:30:00');
+    const date2 = new Date('July 13, 2023 19:27:50');
+    // const date2 = new Date('July 14, 2023 09:30:00');
 
     // Ottengo valore in millisecondo
     let time = date2.getTime() - date1.getTime();
@@ -62,10 +63,12 @@ function continuedHours() {
 
     // Impostare un messaggio alla fine del countdown
     if (time <= 0) {
-        finalMessage.innerHTML = ("Il tempo di attesa è finito");
-    }else if // Non riesco a fermare il tempo quando arriva alla fine
-    
-    
+        // Dato variabule a setInterval per stoppare ciclo con clearInterval
+        const stopCicle = setInterval(contiuedHourscicle, 100);
+        finalMessage.innerHTML = ("Il tempo di attesa è finito"); 
+        // clearInterval per stoppare il tempo
+        clearInterval(stopCicle);       
+    } 
 
 }
 
