@@ -10,6 +10,7 @@ let now;
 // Metto dentro la funzione setInterval il nome della mia funzione dove creo il calcolo del tempo rimanente
 
 setInterval(contiuedHourscicle, 100);
+const stopCicle = setInterval(contiuedHourscicle, 100);
 contiuedHourscicle();
 
 // Ho spostato il calcolo del tempo dentro la funzione.
@@ -64,7 +65,7 @@ function contiuedHourscicle() {
     // Impostare un messaggio alla fine del countdown
     if (time <= 0) {
         // Dato variabule a setInterval per stoppare ciclo con clearInterval
-        const stopCicle = setInterval(contiuedHourscicle, 100);
+        // const stopCicle = setInterval(contiuedHourscicle, 100);
         finalMessage.innerHTML = ("Il tempo di attesa è finito"); 
         // clearInterval per stoppare il tempo
         clearInterval(stopCicle);       
